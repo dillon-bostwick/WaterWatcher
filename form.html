@@ -1,64 +1,93 @@
 <form>
-  <fieldset class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-    <small class="text-muted">We'll never share your email with anyone else.</small>
-  </fieldset>
-  <fieldset class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </fieldset>
-  <fieldset class="form-group">
-    <label for="exampleSelect1">Example select</label>
-    <select class="form-control" id="exampleSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </fieldset>
-  <fieldset class="form-group">
-    <label for="exampleSelect2">Example multiple select</label>
-    <select multiple class="form-control" id="exampleSelect2">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
-    </select>
-  </fieldset>
-  <fieldset class="form-group">
-    <label for="exampleTextarea">Example textarea</label>
-    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-  </fieldset>
-  <fieldset class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" class="form-control-file" id="exampleInputFile">
-    <small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-  </fieldset>
+
+
+	<div>
+		<h1>Thank you for participating in the WaterWatcher project</h1>
+		<h2>Contribute to your community by letting us know what's wrong</h2>
+	</div>
+
+		
+	<div class="radio">
+	   <label for=flagType>What are you reporting today?<br>
+     <input type="radio" name="optionsRadios" id="flagType" value="Bad">
+     I would like to report problems with my water
+     </label>
+    </div>
   <div class="radio">
     <label>
-      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-      Option one is this and that&mdash;be sure to include why it's great
+      <input type="radio" name="optionsRadios" id="flagType" value="Good">
+      I am verifying that my water is safe to drink
+    </label>
+  </div>
+  
+  <br>
+  
+	<div class="radio">
+	   <label for=testType>Have you tested your water?<br>
+     <input type="radio" name="optionsRadios" id="flagType" value="LeadTest">
+     I have tested my water with a verified lead test
+     </label>
+    </div>
+  <div class="radio">
+    <label>
+      <input type="radio" name="optionsRadios" id="flagType" value="OtherTest">
+      I have ran other tests on my water that do not test for lead
     </label>
   </div>
   <div class="radio">
     <label>
-      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-      Option two can be something else and selecting it will deselect option one
+      <input type="radio" name="optionsRadios" id="flagType" value="NoTest">
+      I have not ran any tests on my water
     </label>
   </div>
-  <div class="radio disabled">
-    <label>
-      <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-      Option three is disabled
-    </label>
-  </div>
+  
+  <br>
+		
+  <fieldset class="form-group">
+    <label for="FirstName">First Name: </label>
+    <input type="name" class="form-control" id="FirstName" placeholder="Enter first name">
+  </fieldset>
+  
+  <fieldset class="form-group">
+    <label for="LastName">Last Name: </label>
+    <input type="name" class="form-control" id="LastName" placeholder="Enter last name">
+  </fieldset>  		
+		
+  <fieldset class="form-group">
+    <label for="Location">Location of report</label>
+    <input type="location" class="form-control" id="Location" placeholder="Enter your address">
+    <small class="text-muted">Your address is private and will not be shared. Sharing your location helps
+    													us track our data and locate problem areas in the community</small>
+  </fieldset>
+  
+    <fieldset class="form-group">
+    <label for="InputEmail1">Email address</label>
+    <input type="email" class="form-control" id="InputEmail1" placeholder="Enter email">
+    <small class="text-muted">Your email is private and will not be shared. You will only receive important
+    													notifications in the case of an emergency.</small>
+  </fieldset>
+
+
+
+  <fieldset class="form-group">
+    <label for="Textarea"> Describe all relevant information. Include any details regarding smell and taste</label>
+    <textarea class="form-control" id="Textarea" rows="3"></textarea>
+  </fieldset>
+  
+  <fieldset class="form-group">
+    <label for="InputFile">Take a picture of the water to help us identify water quality by color</label>
+    <input type="file" class="form-control-file" id="InputFile">
+  </fieldset>
+  
+  <br>
+  
   <div class="checkbox">
     <label>
-      <input type="checkbox"> Check me out
+      <input type="checkbox"> I would like to receive updates from the Department of Sanitation for my area
     </label>
   </div>
+  
+  <br>
+  
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
